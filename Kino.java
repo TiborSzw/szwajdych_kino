@@ -6,11 +6,11 @@ public class Kino
     private boolean imax = false;
     private int sitzplaetze = 200;
 
-    public Kino(String neuName, int neuSaele, boolean neuDreiD)
+    public Kino(String name, int saele, boolean dreiD)
     {
-        setName(neuName);
-        setSaele(neuSaele);
-        setDreiD(neuDreiD);
+        setName(name);
+        setSaele(saele);
+        setDreiD(dreiD);
         setImax(false);
         setSitzplaetze(200);
     }
@@ -33,36 +33,36 @@ public class Kino
      * und kann daher nicht implementiert werden.
      */
 
-    public Kino(String neuName, boolean neuDreiD, boolean neuImax, int neuSaele, int neuSitzplaetze)
+    public Kino(String name, boolean dreiD, boolean imax, int saele, int sitzplaetze)
     {
-        setName(neuName);
-        setSaele(neuSaele);
-        setDreiD(neuDreiD);
-        setImax(neuImax);
-        setSitzplaetze(neuSitzplaetze);
+        setName(name);
+        setSaele(saele);
+        setDreiD(dreiD);
+        setImax(imax);
+        setSitzplaetze(sitzplaetze);
     }
 
-    public Kino(String neuName, boolean neuDreiD, int neuSaele)
+    public Kino(String name, boolean dreiD, int saele)
     {
-        setName(neuName);
-        setSaele(neuSaele);
-        setDreiD(neuDreiD);
+        setName(name);
+        setSaele(saele);
+        setDreiD(dreiD);
         setImax(false);
         setSitzplaetze(200);
     }
 
-    public Kino(String neuName, boolean neuDreiD)
+    public Kino(String name, boolean dreiD)
     {
-        setName(neuName);
+        setName(name);
         setSaele(1);
-        setDreiD(neuDreiD);
+        setDreiD(dreiD);
         setImax(false);
         setSitzplaetze(200);
     }
 
-    public Kino(String neuName)
+    public Kino(String name)
     {
-        setName(neuName);
+        setName(name);
         setSaele(1);
         setDreiD(false);
         setImax(false);
@@ -78,10 +78,10 @@ public class Kino
         setSitzplaetze(200);
     }
 
-    public Kino(String neuName, int neuSaele)
+    public Kino(String name, int saele)
     {
-        setName(neuName);
-        setSaele(neuSaele);
+        setName(name);
+        setSaele(saele);
         setDreiD(false);
         setImax(false);
         setSitzplaetze(200);
@@ -112,29 +112,29 @@ public class Kino
         return sitzplaetze;
     }
 
-    public void setName(String neuName)
+    public void setName(String name)
     {
-        name = neuName;
+        this.name = name;
     }
 
-    public void setSaele(int neuSaele)
+    public void setSaele(int saele)
     {
-        saele = neuSaele;
+        this.saele = saele;
     }
 
-    public void setDreiD(boolean neuDreiD)
+    public void setDreiD(boolean dreiD)
     {
-        dreiD = neuDreiD;
+        this.dreiD = dreiD;
     }
 
-    public void setImax(boolean neuImax)
+    public void setImax(boolean imax)
     {
-        imax = neuImax;
+        this.imax = imax;
     }
 
-    public void setSitzplaetze(int neuSitzplaetze)
+    public void setSitzplaetze(int sitzplaetze)
     {
-        sitzplaetze = neuSitzplaetze;
+        this.sitzplaetze = sitzplaetze;
     }
 
     public void printKino()

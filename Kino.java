@@ -15,6 +15,69 @@ public class Kino
         setSitzplaetze(200);
     }
 
+    /*
+     * Welche Konstruktoren koennen nicht implementiert werden?
+     *
+     * Java unterscheidet Konstruktoren nur an der Signatur:
+     * Anzahl, Datentypen und Reihenfolge der Parameter.
+     * Die Namen der Parameter spielen keine Rolle.
+     *
+     * Kino(neuName, neuImax, neuSaele)   ->  (String, boolean, int)
+     * hat dieselbe Signatur wie
+     * Kino(neuName, neuDreiD, neuSaele)  ->  (String, boolean, int)
+     * und kann daher nicht implementiert werden.
+     *
+     * Kino(neuName, neuSaele, neuImax)   ->  (String, int, boolean)
+     * hat dieselbe Signatur wie
+     * Kino(neuName, neuSaele, neuDreiD)  ->  (String, int, boolean)
+     * und kann daher nicht implementiert werden.
+     */
+
+    public Kino(String neuName, boolean neuDreiD, boolean neuImax, int neuSaele, int neuSitzplaetze)
+    {
+        setName(neuName);
+        setSaele(neuSaele);
+        setDreiD(neuDreiD);
+        setImax(neuImax);
+        setSitzplaetze(neuSitzplaetze);
+    }
+
+    public Kino(String neuName, boolean neuDreiD, int neuSaele)
+    {
+        setName(neuName);
+        setSaele(neuSaele);
+        setDreiD(neuDreiD);
+        setImax(false);
+        setSitzplaetze(200);
+    }
+
+    public Kino(String neuName, boolean neuDreiD)
+    {
+        setName(neuName);
+        setSaele(1);
+        setDreiD(neuDreiD);
+        setImax(false);
+        setSitzplaetze(200);
+    }
+
+    public Kino(String neuName)
+    {
+        setName(neuName);
+        setSaele(1);
+        setDreiD(false);
+        setImax(false);
+        setSitzplaetze(200);
+    }
+
+    public Kino()
+    {
+        setName("UNKN");
+        setSaele(1);
+        setDreiD(false);
+        setImax(false);
+        setSitzplaetze(200);
+    }
+
     public String getName()
     {
         return name;

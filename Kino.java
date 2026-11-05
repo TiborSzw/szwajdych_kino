@@ -119,7 +119,15 @@ public class Kino
 
     public void setSaele(int saele)
     {
-        this.saele = saele;
+        if ((saele >= 1) && (saele <= 50))
+        {
+            this.saele = saele;
+        }
+        else
+        {
+            System.out.println("Fehler: die Anzahl der Säle muss zwischen 1 und 50 sein!");
+            this.saele = 1;
+        }
     }
 
     public void setDreiD(boolean dreiD)

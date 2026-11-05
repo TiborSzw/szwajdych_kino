@@ -139,6 +139,13 @@ public class Kino
 
     public void printKino()
     {
-        System.out.println(name + " Kino: " + saele + " Saele - " + dreiD);
+        if (dreiD == true)
+        {
+            System.out.println("Kino: " + name + " - " + saele + " Säle - mit 3D");
+        }
+        else
+        {
+            System.out.println("Kino: " + name + " - " + saele + " Säle - ohne 3D");
+        }
     }
 }

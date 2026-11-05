@@ -18,4 +18,19 @@ public class Kino
     {
         return dreiD;
     }
+
+    public void setName(String neuName)
+    {
+        name = neuName;
+    }
+
+    public void setSaele(int neuSaele)
+    {
+        saele = neuSaele;
+    }
+
+    public void setDreiD(boolean neuDreiD)
+    {
+        dreiD = neuDreiD;
+    }
 }

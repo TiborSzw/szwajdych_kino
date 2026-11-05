@@ -148,4 +148,34 @@ public class Kino
             System.out.println("Kino: " + name + " - " + saele + " Säle - ohne 3D");
         }
     }
+
+    public String getStadt()
+    {
+        int pos;
+        pos = name.indexOf(" ");
+        if (pos == -1)
+        {
+            System.out.println("Fehler: " + name + " enthaelt kein Leerzeichen, keine Stadt gefunden!");
+            return "UNKN";
+        }
+        else
+        {
+            return name.substring(0, pos);
+        }
+    }
+
+    public String getKinoname()
+    {
+        int pos;
+        pos = name.indexOf(" ");
+        if (pos == -1)
+        {
+            System.out.println("Fehler: " + name + " enthaelt kein Leerzeichen, kein Kinoname gefunden!");
+            return "UNKN";
+        }
+        else
+        {
+            return name.substring(pos + 1);
+        }
+    }
 }

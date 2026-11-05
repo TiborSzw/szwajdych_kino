@@ -40,4 +40,9 @@ public class Kino
     {
         dreiD = neuDreiD;
     }
+
+    public void printKino()
+    {
+        System.out.println(name + " Kino: " + saele + " Saele - " + dreiD);
+    }
 }

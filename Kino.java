@@ -78,6 +78,15 @@ public class Kino
         setSitzplaetze(200);
     }
 
+    public Kino(String neuName, int neuSaele)
+    {
+        setName(neuName);
+        setSaele(neuSaele);
+        setDreiD(false);
+        setImax(false);
+        setSitzplaetze(200);
+    }
+
     public String getName()
     {
         return name;

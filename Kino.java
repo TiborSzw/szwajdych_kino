@@ -4,6 +4,13 @@ public class Kino
     private int saele = 0;
     private boolean dreiD = false;
 
+    public Kino(String neuName, int neuSaele, boolean neuDreiD)
+    {
+        setName(neuName);
+        setSaele(neuSaele);
+        setDreiD(neuDreiD);
+    }
+
     public String getName()
     {
         return name;

@@ -50,4 +50,39 @@ public class KinoTest
         assertEquals("UNKN", apollo.getStadt());
         assertEquals("UNKN", apollo.getKinoname());
     }
+
+    @Test
+    public void test_saeleZuWenig()
+    {
+        Kino apollo;
+        apollo = new Kino("Wien Apollo", 0, true);
+        assertEquals(1, apollo.getSaele());
+    }
+
+    @Test
+    public void test_saeleOK()
+    {
+        Kino apollo;
+        apollo = new Kino("Wien Apollo", 25, true);
+        assertEquals(25, apollo.getSaele());
+    }
+
+    @Test
+    public void test_saeleZuViel()
+    {
+        Kino apollo;
+        apollo = new Kino("Wien Apollo", 51, true);
+        assertEquals(1, apollo.getSaele());
+    }
+
+    @Test
+    public void test_saeleGrenzwerte()
+    {
+        Kino klein;
+        Kino gross;
+        klein = new Kino("Wien Klein", 1, false);
+        gross = new Kino("Wien Gross", 50, false);
+        assertEquals(1, klein.getSaele());
+        assertEquals(50, gross.getSaele());
+    }
 }
